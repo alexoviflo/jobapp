@@ -26,5 +26,38 @@ export async function applyToJob(token,_, jobData) {
             return null
         }
         return data
-
 }
+
+export async function updateApplicationStatus(token, {job_id}, status) {
+    const supabase = await supabaseClient(token);
+
+   
+        const { data, error } = await supabase
+        .from("applications").update({status})
+        .eq("job_id", job_id)
+        .select()
+
+        if(error || data.length === 0) {
+            console.log("Error updating application status:", error)
+            return null
+        }
+        return data
+}
+
+export async function getApplications(token, {user_id}) {
+    const supabase = await supabaseClient(token);
+
+   
+        const { data, error } = await supabase
+        .from("applications") 
+        .select("*, job:jobs(title,company:companies(name))")
+        .eq("candidate_id", user_id)
+
+        if(error) {
+            console.log("Error fetching applications:", error)
+            return null
+        }
+        return data
+}
+
+

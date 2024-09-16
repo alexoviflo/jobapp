@@ -15,11 +15,10 @@ import {
   SelectContent,
   SelectGroup,
   SelectItem,
-  SelectLabel,
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
-import { City, State } from 'country-state-city'
+import { City } from 'country-state-city'
 import {
   Pagination,
   PaginationContent,
@@ -59,6 +58,7 @@ const JobListing = () => {
  const indexOfFirstJob = indexOfLastJob - itemsPerPage
  const currentJobs = jobs?.slice(indexOfFirstJob, indexOfLastJob)
 
+ 
  useEffect(() => {
   if(isLoaded) {
     fnCompanies()
@@ -164,7 +164,7 @@ const clearFilters = () => {
           {currentJobs?.length ? (
             currentJobs.map((job) => {
               return <JobCard key={job.id} job={job}
-              savedInit={job.saved?.length>0}
+              savedInit={job?.saved?.length>0}
               />
             })
           ) : (
