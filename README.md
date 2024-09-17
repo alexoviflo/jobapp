@@ -1,7 +1,7 @@
 # React + Vite
 
 jobapp
-Nettside hvor arbeidsgiver kan legge til stillinger, arbeidssøker kan finne stillinger og søke. man kan lagre stillinger og legge til nye stilinger
+Nettside hvor arbeidsgiver kan legge til stillinger, arbeidssøker kan finne stillinger og søke. Man kan lagre stillinger og legge til nye stilinger
 
 Installation
 Clone the repository:
