@@ -30,19 +30,19 @@ const Header = () => {
     <>
       <nav className='py-4 flex justify-between items-center'>
         <Link>
-        <img src='/logoJob.jpg' className='h-20'/>
+        <img src='/ansatt.png' className='h-20'/>
         </Link>
 
        <div className="flex gap-8">
        <SignedOut>
-       <Button variant="outline" onClick={() => setShowSignIn(true)}>Login</Button>
+       <Button variant="outline" onClick={() => setShowSignIn(true)}>Logg inn</Button>
       </SignedOut>
       <SignedIn>
      { user?.unsafeMetadata?.role === "recruiter"&& (
       <Link to='/post-job'>
         <Button variant="destructive" className="rounded-full">
           <PenBox size={20} className="mr-2"/>
-          Post a Job
+          Legg Ut En Jobb
         </Button>
         
         </Link>) }

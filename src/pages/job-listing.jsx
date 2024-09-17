@@ -106,22 +106,22 @@ const clearFilters = () => {
 };
   return (
     <div className='min-h-screen flex flex-col'>
-      <h1 className='gradient-title font-extrabold text-6xl sm:text-7xl text-center pb-8'>Latest jobs</h1>
+      <h1 className='gradient-title font-extrabold text-6xl sm:text-7xl text-center pb-8'>Se Etter Jobber</h1>
 
       {/* Add filters here */}
       <form onSubmit={handleSearch} className='h-14 flex w-full gap-2 items-center mb-3'>
-        <Input type="text" placeholder="Search jobs by title.." name="search-query"
+        <Input type="text" placeholder="Søk på jobber ved tittel.." name="search-query"
         className="h-full flex-1 px-4 text-md"
         />
         <Button type="submit" className="h-full sm:w-28" variant="blue">
-          Search
+          Søk
         </Button>
       </form>
 
       <div className='flex flex-col sm:flex-row gap-2'>
       <Select value={location} onValueChange={(value) => setLocation(value)}>
       <SelectTrigger>
-        <SelectValue placeholder="Filter by location" />
+        <SelectValue placeholder="Søk med by" />
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>
@@ -137,7 +137,7 @@ const clearFilters = () => {
     
     <Select value={company_id} onValueChange={(value) => setCompany_id(value)}>
       <SelectTrigger >
-        <SelectValue placeholder="Filter by Company" />
+        <SelectValue placeholder="Søk med selskap" />
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>
@@ -153,7 +153,7 @@ const clearFilters = () => {
     </Select>
     <Button className="sm:w-1/2"
           variant="destructive"
-          onClick={clearFilters} > Clear Filters</Button>
+          onClick={clearFilters} >Fjern filtre</Button>
       </div>
 
       {loadingJobs && (
@@ -168,7 +168,7 @@ const clearFilters = () => {
               />
             })
           ) : (
-            <p>No jobs found</p>
+            <p>Ingen Jobber funnet</p>
           )}
         </div>
       

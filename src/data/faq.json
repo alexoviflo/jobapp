@@ -1,26 +1,26 @@
 [
     {
-      "question": "What is Hirrd?",
-      "answer": "Hirrd is a Job Portal Application allows companies to post job listings and users to search and apply for jobs. It provides features for both job seekers and employers, with user-friendly interfaces and secure authentication."
+      "question": "Hva er Ansatt?",
+      "answer": "Ansatt er en jobbportal-applikasjon som lar bedrifter legge ut stillingsannonser og brukere søke etter og søke på jobber. Den tilbyr funksjoner for både jobbsøkere og arbeidsgivere, med brukervennlige grensesnitt og sikker autentisering."
     },
     {
-      "question": "How do I post a job?",
-      "answer": "As an employer, you can post a job by navigating to the 'Post Job' section after logging in. Fill in the job details and submit the form to create a new job listing."
+      "question": "Hvordan legger jeg ut en jobb?",
+      "answer": "Som arbeidsgiver kan du legge ut en jobb ved å navigere til 'Legg ut jobb'-seksjonen etter innlogging. Fyll ut jobbdetaljene og send inn skjemaet for å opprette en ny stillingsannonse."
     },
     {
-      "question": "How can I search for jobs?",
-      "answer": "Job seekers can search for jobs by keywords, location, category, and other filters using the search bar on the homepage or the dedicated job search page."
+      "question": "Hvordan kan jeg søke på jobber?",
+      "answer": "Jobbsøkere kan søke etter jobber ved hjelp av nøkkelord, sted, kategori og andre filtre ved å bruke søkefeltet på hjemmesiden eller den dedikerte jobbsøkesiden."
     },
     {
-      "question": "How do I apply for a job?",
-      "answer": "To apply for a job, click on the job listing and follow the application instructions provided. You may need to upload your resume and provide additional information."
+      "question": "Hvordan søker jeg på en jobb?",
+      "answer": "For å søke på en jobb, klikk på stillingsannonsen og følg søknadsinstruksjonene som er gitt. Du må kanskje laste opp CV-en din og gi tilleggsinformasjon."
     },
     {
-      "question": "Can I save jobs to apply later?",
-      "answer": "Yes, you can save job listings by clicking the 'Save Job' button on the job listing. Saved jobs can be accessed from your profile under the 'Saved Jobs' section."
+      "question": "Kan jeg lagre jobber som jeg vil søke på senere?",
+      "answer": "Ja, du kan lagre stillingsannonser ved å klikke på 'Lagre jobb'-knappen på stillingsannonsen. Lagrede jobber kan nås fra profilen din under 'Lagrede jobber'-seksjonen."
     },
     {
-      "question": "How do I track my job applications?",
-      "answer": "Job seekers can track the status of their applications from the 'Applications' section in their profile. This section provides updates on the progress of each application."
+      "question": "Hvordan sporer jeg jobben jeg har søkt på?",
+      "answer": "Jobbsøkere kan følge statusen til sine søknader fra 'Søknader'-seksjonen i profilen. Denne seksjonen gir oppdateringer om fremdriften til hver søknad."
     }
   ]

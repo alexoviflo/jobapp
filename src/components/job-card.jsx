@@ -73,7 +73,7 @@ const JobCard = ({job, isMyJob = false, savedInit = false, onJobSaved = () => {}
      <CardFooter className="flex gap-2">
         <Link to={`/job/${job.id}`} className='flex-1'>
         <Button variant="secondary" className="w-full">
-            More details
+            Mer Detaljer
         </Button>
         </Link>
         {!isMyJob && (

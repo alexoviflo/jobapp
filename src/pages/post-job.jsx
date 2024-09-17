@@ -96,15 +96,15 @@ const PostJob = () => {
 
   return (
     <div>
-      <h1 className='gradient-title font-extrabold text-5xl sm:text-7xl text-center pb-8'>Post a Job</h1>
+      <h1 className='gradient-title font-extrabold text-5xl sm:text-7xl text-center pb-8'>Legg ut en Jobb</h1>
 
       <form onSubmit={handleSubmit(onSubmit)} className="flex flex-col gap-4 p-4 pb-0">
 
-        <Input placeholder="Job Title" {...register("title")} />
+        <Input placeholder="Jobb Tittel" {...register("title")} />
         {errors.title &&  <p className="text-red-500">{errors.title.message}</p>}
       
 
-      <Textarea placeholder="Job Description" {...register("description")} />
+      <Textarea placeholder="Jobb Beskrivelse" {...register("description")} />
         {errors.description && (
           <p className="text-red-500">{errors.description.message}</p>
         )}
@@ -119,7 +119,7 @@ value={field.value}
  onValueChange={field.onChange}
 >
       <SelectTrigger>
-        <SelectValue placeholder="Filter by location" />
+        <SelectValue placeholder="Søk etter by" />
       </SelectTrigger>
       <SelectContent>
         <SelectGroup>
@@ -144,7 +144,7 @@ value={field.value}
          value={field.value} onValueChange={field.onChange}
           >
             <SelectTrigger >
-              <SelectValue placeholder="Filter by Company">
+              <SelectValue placeholder="Søk etter Selskap">
               {field.value
                       ? companies?.find((com) => com.id === Number(field.value))
                           ?.name
@@ -191,7 +191,7 @@ value={field.value}
         )}
         {loadingCreateJob && <BarLoader width={"100%"} color="#36d7b7" />}
         <Button type="submit" variant="blue" size="lg" className="mt-2">
-          Submit
+          Send inn
         </Button>
       </form>
     </div>

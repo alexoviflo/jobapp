@@ -31,7 +31,7 @@ const LandingPage = () => {
     <main className="flex flex-col gap-10 sm:gap-20 py-10 sm:py-20">
       <section className='text-center'>
         <h1 className="flex flex-col items-center justify-center gradient-title font-extrabold text-4xl sm:text-6xl lg:text-8xl tracking-tighter py-4">
-          Finn Din Drømme Jobb <span className='flex item-center gap-2 sm:gap-6'>og bli <img src='/logoJob.jpg' alt='leder' className='h-14 sm:h-24 lg:h-32' /></span></h1>
+          Finn Din Drømme Jobb <span className='flex item-center gap-2 sm:gap-6'>og bli Ansatt</span></h1>
           <p className="text-gray-300 sm:mt-4 text-xs sm:text-xl">
           Utforsk tusenvis av jobber eller finn din perfekte kandidat.
         </p>
@@ -61,7 +61,7 @@ const LandingPage = () => {
       
     </Carousel>
       {/* banner */}
-      <img src='/leder.jpg' className='w-full'/>
+      <img src='/ansatt.png' className='w-full'/>
 
       <section className="grid grid-cols-1 md:grid-cols-2 gap-4">
       <Card>

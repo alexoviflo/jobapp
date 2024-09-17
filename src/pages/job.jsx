@@ -90,9 +90,9 @@ if (!isLoaded || loadingJob) {
     </Select>
   )}
 
-      <h2 className='text-2xl sm:text-3xl font-bold'>About the job</h2>
+      <h2 className='text-2xl sm:text-3xl font-bold'>Om Jobben</h2>
       <p className='sm:text-lg'>{job?.description}</p>
-      <h2 className='text-2xl sm:text-3xl font-bold'>What we are looking for</h2>
+      <h2 className='text-2xl sm:text-3xl font-bold'>Hva Ser Vi Etter</h2>
       <MDEditor.Markdown
         source={job?.requirements}
         className="bg-transparent sm:text-lg"  
@@ -108,7 +108,7 @@ if (!isLoaded || loadingJob) {
       {
         job?.applications?.length > 0 && job?.recruiter_id === user?.id && (
           <div className='flex flex-col gap-2'>
-            <h2 className='text-2xl sm:text-3xl font-bold'>Applications</h2>
+            <h2 className='text-2xl sm:text-3xl font-bold'>Søknader</h2>
             {job?.applications.map((application) => {
               return ( <ApplicationCard key={application.id} application={application} />
            ) })}

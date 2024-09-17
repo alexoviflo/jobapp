@@ -19,7 +19,7 @@ import {
   import { useEffect } from "react";
   
   const schema = z.object({
-    name: z.string().min(1, { message: "Company name is required" }),
+    name: z.string().min(1, { message: "Selskapets navn er nødvendig" }),
     logo: z
       .any()
       .refine(
@@ -27,7 +27,7 @@ import {
           file[0] &&
           (file[0].type === "image/png" || file[0].type === "image/jpeg"),
         {
-          message: "Only Images are allowed",
+          message: "Bare bilder er tillat",
         }
       ),
   });
@@ -65,12 +65,12 @@ import {
       <Drawer>
         <DrawerTrigger>
           <Button type="button" size="sm" variant="secondary">
-            Add Company
+           Legg til et Selskap
           </Button>
         </DrawerTrigger>
         <DrawerContent>
           <DrawerHeader>
-            <DrawerTitle>Add a New Company</DrawerTitle>
+            <DrawerTitle>Legg til et nytt Selskap</DrawerTitle>
           </DrawerHeader>
           <form className="flex gap-2 p-4 pb-0">
             {/* Company Name */}
@@ -83,15 +83,14 @@ import {
               className=" file:text-gray-500"
               {...register("logo")}
             />
-  
-            {/* Add Button */}
+   
             <Button
               type="button"
               onClick={handleSubmit(onSubmit)}
               variant="destructive"
               className="w-40"
             >
-              Add
+              Legg Til
             </Button>
           </form>
           <DrawerFooter>
@@ -103,7 +102,7 @@ import {
             {loadingAddCompany && <BarLoader width={"100%"} color="#36d7b7" />}
             <DrawerClose asChild>
               <Button type="button" variant="secondary">
-                Cancel
+                Kanseler
               </Button>
             </DrawerClose>
           </DrawerFooter>
